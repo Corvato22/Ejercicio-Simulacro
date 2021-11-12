@@ -6,9 +6,11 @@ import { url } from '../sources/url'
 
 
 const DivContainerCards = styled.div`
+    padding: 10px 200px 10px 200px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 `
 
@@ -37,7 +39,7 @@ export const Home = () => {
                 {
                     cards.map((data) => (
 
-                        <Card bg="dark" text="light" border="secondary" key={data.id} style={{ width: '300px', height: '' }}>
+                        <Card bg="dark" text="light" border="secondary" key={data.id} style={{ width: '300px', height: '450px', margin:"20px"}}>
                             <Card.Img variant="top" src={data.image} />
                             <Card.Body>
                                 <Card.Title>{data.name}</Card.Title>
